@@ -286,3 +286,88 @@ If you're looking for an easy-to-use tool to test your email SMTP functionality,
 ├── tsconfig.json
 └── yarn.lock
 ```
+Medical 
+1. GET /getMedicalDataByFilters/{city}/{category}/{speciality}
+Récupère les données médicales filtrées en fonction de la ville, de la catégorie et de la spécialité.
+
+Paramètres de requête
+
+city : Ville de l'établissement médical.
+category : Catégorie de l'établissement médical.
+speciality : Spécialité de l'établissement médical.
+Réponse
+
+Code 200 OK : Retourne les données médicales filtrées au format JSON.
+2. GET /getMedicalDataCountsByCity
+Récupère le nombre de données médicales par ville.
+
+Réponse
+
+Code 200 OK : Retourne les données médicales comptées par ville au format JSON.
+3. GET /getCategoryCountsByCity/{category}
+Récupère le nombre de données médicales par catégorie et ville.
+
+Paramètres de requête
+
+category : Catégorie de l'établissement médical.
+Réponse
+
+Code 200 OK : Retourne les données médicales comptées par catégorie et ville au format JSON.
+4. GET /getMedicalDataCountByCategory
+Récupère le nombre total de données médicales par catégorie.
+
+Réponse
+
+Code 200 OK : Retourne le nombre total de données médicales par catégorie au format JSON.
+5. GET /getAllCities
+Récupère la liste de toutes les villes disponibles dans les données médicales.
+
+Réponse
+
+Code 200 OK : Retourne la liste des villes au format JSON.
+6. GET /getAllCategories
+Récupère la liste de toutes les catégories disponibles dans les données médicales.
+
+Réponse
+
+Code 200 OK : Retourne la liste des catégories au format JSON.
+7. GET /getPositifCountByFilters/{city}/{category}/{speciality}
+Récupère le nombre de commentaires positifs filtrés en fonction de la ville, de la catégorie et de la spécialité.
+
+Paramètres de requête
+
+city : Ville de l'établissement médical.
+category : Catégorie de l'établissement médical.
+speciality : Spécialité de l'établissement médical.
+Réponse
+
+Code 200 OK : Retourne le nombre de commentaires positifs filtrés au format JSON.
+8. GET /getNegatifCountByFilters/{city}/{category}/{speciality}
+Récupère le nombre de commentaires négatifs filtrés en fonction de la ville, de la catégorie et de la spécialité.
+
+Paramètres de requête
+
+city : Ville de l'établissement médical.
+category : Catégorie de l'établissement médical.
+speciality : Spécialité de l'établissement médical.
+Réponse
+
+Code 200 OK : Retourne le nombre de commentaires négatifs filtrés au format JSON.
+9. GET /getAveragePositiveScoreByCategory/{category}
+Récupère la moyenne des scores positifs par catégorie.
+
+Paramètres de requête
+
+category : Catégorie de l'établissement médical.
+Réponse
+
+Code 200 OK : Retourne la moyenne des scores positifs par catégorie au format JSON.
+10. GET /getCategoryCountsByRegion/{category}
+Récupère le nombre de données médicales par catégorie et région.
+
+Paramètres de requête
+
+category : Catégorie de l'établissement médical.
+Réponse
+
+Code 200 OK : Retourne les données médicales comptées par catégorie et région au format JSON.
