@@ -286,6 +286,7 @@ If you're looking for an easy-to-use tool to test your email SMTP functionality,
 ├── tsconfig.json
 └── yarn.lock
 ```
+## Run with: npm run watch:win
 # Medical Route
 ## GET /getMedicalDataByFilters/{city}/{category}/{speciality}
 Récupère les données médicales filtrées en fonction de la ville, de la catégorie et de la spécialité.
